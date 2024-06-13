@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<script>
+    function printName() {
+        // Get the name from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        let name = urlParams.get('name');
+        // If the name is not in the URL, prompt the user for it
+        while (name == null || name == "") {
+            name = prompt("What is your name?");
+        }
+        // Print the name to the page
+        var greeting = document.getElementById("greeting");
+        greeting.innerHTML = "Hello " + name;
+    }
+
+</script>
+
+<body>
+    <header>
+        <h1>George's Super Awesome Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="dad.html">Dad</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="greeting">Hello</h2>
+        <script>
+            // Call the printName function
+            printName();
+        </script>
+    </main>
+    <footer>
+        &copy; George Ray 2024
+    </footer>
+</body>
+
+</html>
