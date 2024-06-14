@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
     <title>Team Sites</title>
+    <script>
+        function show(){
+            var div = document.getElementById("votelink");
+            div.style.backgroundColor = "black";
+        }
+        function hide(){
+            var div = document.getElementById("votelink");
+            div.style.backgroundColor = "white";
+        }
+    </script>
 </head>
 
 <body>
@@ -21,11 +32,14 @@
     </nav>
     <img src="rubric.png" alt="site rubic" height="300">
     <ul>
-        <li><a href="https://27cray.github.io/team/index.html">Esme and Corbin</a></li>
-        <li><a href="https://25bray.github.io/Team/index.html"></a>Emmeline and Beckett</li>
-        <li><a href="https://krayzii.github.io/team/index.html"></a>Kaylie and Nate</li>
-        <li><a href="https://burrito92024.github.io/team/index.html"></a>Lilah and Reid</li>
+        <li><a href="https://27cray.github.io/team/index.html" target="_blank">Esme and Corbin</a></li>
+        <li><a href="https://25bray.github.io/Team/index.html" target="_blank">Emmeline and Beckett</a></li>
+        <li><a href="https://krayzii.github.io/team/index.html" target="_blank">Kaylie and Nate</a></li>
+        <li><a href="https://burrito92024.github.io/team/index.html" target="_blank">Lilah and Reid</a></li>
     </ul>
+    <div id="votelink" onmouseover="show()" onmouseout="hide()">
+        <a href="https://app.rankedvote.co/rv/dv1bp33h5ql866d1di/vote" target="_blank">Vote on your favorite site!</a>
+    </div>
 </body>
 
 </html>
